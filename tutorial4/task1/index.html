@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Book Catalogue</title>
+<script>
+// Fetch and display XML data
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('book.xml')
+        .then(response => response.text())
+        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+        .then(data => {
+            const books = data.querySelectorAll('book');
+            let output = '<h1>Book Catalogue</h1>';
+            books.forEach(book => {
+                output += `
+                    <div>
+                        <h4>Title:${book.querySelector('title').textContent}</h4>
+                        <p>Author: ${book.querySelector('author').textContent}</p>
+                        <p>Price: $${book.querySelector('price').textContent}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('catalogue').innerHTML = output;
+        });
+});
+</script>
+</head>
+<body>
+<div id="catalogue">
+</div>
+</body>
+</html>

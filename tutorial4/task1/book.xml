@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue>
+    <book id="1">
+        <title>It starts with us</title>
+        <author>Colleen Hoover</author>
+        <price>19.99</price>
+    </book>
+    <book id="2">
+        <title>Ugly love</title>
+        <author>Colleen Hoover</author>
+        <price>15.99</price>
+    </book>
+</catalogue>

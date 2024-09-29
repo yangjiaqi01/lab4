@@ -1,0 +1,59 @@
+{
+    "profiles": [
+      {
+        "firstName": "Betsy",
+        "lastName": "White",
+        "email": "Betsy.White@example.com",
+        "dateOfBirth": "2004-02-01",
+        "address": {
+          "street": "123 Main Street",
+          "city": "Anytown",
+          "state": "NY",
+          "zipCode": "24135"
+        },
+        "preferences": {
+          "theme": "dark",
+          "language": "English",
+          "notifications": true,
+          "subscription": true
+        }
+      },
+      {
+        "firstName": "Justine",
+        "lastName": "Smith",
+        "email": "Justine.smith@example.com",
+        "dateOfBirth": "2003-04-23",
+        "address": {
+          "street": "456 Maple Avenue",
+          "city": "Sometown",
+          "state": "CA",
+          "zipCode": "68907"
+        },
+        "preferences": {
+          "theme": "light",
+          "language": "Spanish",
+          "notifications": false,
+          "subscription": false
+        }
+      },
+      {
+        "firstName": "Alice",
+        "lastName": "Johnson",
+        "email": "alice.johnson@example.com",
+        "dateOfBirth": "2000-12-15",
+        "address": {
+          "street": "789 Oak Lane",
+          "city": "Othertown",
+          "state": "TX",
+          "zipCode": "10112"
+        },
+        "preferences": {
+          "theme": "auto",
+          "language": "French",
+          "notifications": true,
+          "subscription": true
+        }
+      }
+    ]
+  }
+  
